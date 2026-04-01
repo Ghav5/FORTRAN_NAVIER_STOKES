@@ -1,0 +1,49 @@
+{
+  "core" : {
+    "version" : "19.0.0 build 002",
+    "module_type" : "flow",
+    "name" : "interne.import_content",
+    "applications" : [ "contrat_interne" ],
+    "is_locked" : false,
+    "object_id" : "g_m_eebbe3cf-066b-4b00-afc2-29766081d157",
+    "administration_group" : [ ]
+  },
+  "extended" : {
+    "flow" : {
+      "id" : "aa82e478-9e90-497c-9bd0-35dfcdc705a7",
+      "event" : "import_content",
+      "type" : "event",
+      "next" : [ {
+        "id" : "631a243d-7463-4831-885f-40b9c324dade",
+        "category" : "condition",
+        "title" : "",
+        "type" : "is_in_room",
+        "type_category" : "location",
+        "metadata" : "",
+        "aspect" : "",
+        "values" : [ "" ],
+        "node" : "",
+        "rooms" : [ "room_document_interne" ],
+        "next" : [ {
+          "category" : "module",
+          "type" : "dialog",
+          "value" : "ift_full_meta_layout",
+          "values" : [ ],
+          "title" : "",
+          "id" : "58ca612d-6659-4b72-8041-b8d1e88dd59b",
+          "no_action" : false
+        } ]
+      }, {
+        "id" : "dec1e359-6618-4214-94b1-16aaa3aaea0a",
+        "category" : "module",
+        "title" : "",
+        "type" : "dialog",
+        "value" : "StandardMetadata",
+        "no_action" : false,
+        "values" : [ ]
+      } ]
+    }
+  },
+  "data_type" : "g_module",
+  "r_timestamp" : 1768234921119
+}
